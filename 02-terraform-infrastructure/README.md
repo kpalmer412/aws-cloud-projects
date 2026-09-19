@@ -13,7 +13,7 @@ graph TD
         B --> C[OIDC JWT Token Requested]:::github
     end
 
-    subgraph AWS_Cloud [Secure Cloud Tenant Account: 491074939705]
+    subgraph AWS_Cloud [Secure Cloud Tenant Account: 123456]
         D[IAM OIDC Identity Provider]:::aws -->|Cryptographic Verification| E[IAM Deployment Role: github-actions-prod-deployer]:::aws
         E -->|Temporary Assumed Token Keys| F[Terraform Engine Execution]:::aws
         
